@@ -9,6 +9,8 @@ namespace _1_AssemblyDependency {
     class Program {
         static void Main(string[] args) {
             Console.ReadKey();
+            MessagePrinterService service = new MessagePrinterService();
+            service.PrintMessage();
         }
     }
 }
