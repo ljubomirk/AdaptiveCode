@@ -24,6 +24,7 @@ namespace _2_NewCodeSmell.Controllers
         [HttpPost]
         public ActionResult ChangePassword(int userId, string newPassword)
         {
+
             return View();
         }
     }
