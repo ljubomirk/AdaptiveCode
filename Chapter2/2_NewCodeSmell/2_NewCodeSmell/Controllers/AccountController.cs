@@ -1,5 +1,4 @@
-﻿using _2_NewCodeSmell.Infrastructure;
-using _2_NewCodeSmell.Models;
+﻿using _2_NewCodeSmell.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,9 +24,7 @@ namespace _2_NewCodeSmell.Controllers
         [HttpPost]
         public ActionResult ChangePassword(int userId, string newPassword)
         {
-            var userRepository = new UserRepository();
-            User user = userRepository.GetById(userId);
-            securityService.ChangePassword(user, newPassword);
+            securityService.ChangePassword(userId, newPassword);
             return View();
         }
     }
