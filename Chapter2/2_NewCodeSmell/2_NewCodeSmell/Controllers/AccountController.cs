@@ -1,4 +1,5 @@
-﻿using _2_NewCodeSmell.Models;
+﻿using _2_NewCodeSmell.Interfaces;
+using _2_NewCodeSmell.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,11 @@ namespace _2_NewCodeSmell.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SecurityService securityService;
+        private readonly ISecurityService securityService;
 
-        public AccountController() {
-            this.securityService = new SecurityService();
+        public AccountController(ISecurityService securityService) {
+            if (securityService == null) throw new ArgumentNullException("securityService");
+            this.securityService = securityService;
         }
 
         [HttpGet]
