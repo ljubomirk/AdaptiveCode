@@ -1,7 +1,8 @@
-﻿using _2_NewCodeSmell.Models;
+﻿using _2_NewCodeSmell.Interfaces;
+using _2_NewCodeSmell.Models;
 
 namespace _2_NewCodeSmell.Infrastructure {
-    public class UserRepository {
+    public class UserRepository : IUserRepository {
         public User GetById(int userId) {
             return new User();
         }

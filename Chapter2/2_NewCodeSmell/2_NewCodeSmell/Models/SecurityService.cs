@@ -2,7 +2,7 @@
 using System;
 
 namespace _2_NewCodeSmell.Models {
-    public class SecurityService {
+    public class SecurityService : ISecurityService {
         private IUserRepository userRepository;
 
         public SecurityService(IUserRepository userRepository) {
