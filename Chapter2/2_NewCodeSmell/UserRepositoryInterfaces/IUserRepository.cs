@@ -2,6 +2,6 @@
 
 namespace UserRepositoryInterfaces.Interfaces {
     public interface IUserRepository {
-        User GetById(int userId);
+        Product GetById(int productId);
     }
 }

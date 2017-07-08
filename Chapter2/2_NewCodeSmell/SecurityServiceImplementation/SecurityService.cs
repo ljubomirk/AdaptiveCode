@@ -14,7 +14,7 @@ namespace SecurityServiceImplementation {
         }
 
         public void ChangePassword(int userId, string newPassword) {
-            User user = userRepository.GetById(userId);
+            Product user = userRepository.GetById(userId);
         }
     }
 }

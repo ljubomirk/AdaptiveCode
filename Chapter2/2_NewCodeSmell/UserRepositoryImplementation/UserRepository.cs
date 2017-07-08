@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace UserRepositoryImplementation
 {
     public class UserRepository : IUserRepository {
-        public User GetById(int userId) {
-            return new User();
+        public Product GetById(int userId) {
+            return new Product();
         }
     }
 }
