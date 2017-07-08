@@ -114,9 +114,7 @@
     </Compile>
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Infrastructure\UserRepository.cs" />
-    <Compile Include="Interfaces\ISecurityService.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
-    <Compile Include="Models\SecurityService.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -139,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SecurityServiceInterface\SecurityServiceInterface.csproj">
+      <Project>{77c680f4-3b34-491f-9be0-65bdec01960a}</Project>
+      <Name>SecurityServiceInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,5 +1,4 @@
-﻿using _2_NewCodeSmell.Interfaces;
-using _2_NewCodeSmell.Models;
+﻿using SecurityServiceInterfaces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

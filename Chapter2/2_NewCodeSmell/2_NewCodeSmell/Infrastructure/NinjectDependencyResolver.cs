@@ -2,6 +2,7 @@
 using _2_NewCodeSmell.Models;
 using Ninject;
 using Ninject.Syntax;
+using SecurityServiceInterfaces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
