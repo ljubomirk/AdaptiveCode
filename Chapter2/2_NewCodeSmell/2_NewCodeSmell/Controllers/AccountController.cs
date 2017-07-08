@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace _2_NewCodeSmell.Controllers
+namespace UserRepositoryInterfaces.Controllers
 {
     public class AccountController : Controller
     {

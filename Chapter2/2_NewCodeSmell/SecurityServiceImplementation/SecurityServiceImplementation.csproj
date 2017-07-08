@@ -44,9 +44,17 @@
     <Compile Include="SecurityService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{592E3623-FFC0-4709-8D07-9FE0D19A00C4}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SecurityServiceInterface\SecurityServiceInterface.csproj">
       <Project>{77c680f4-3b34-491f-9be0-65bdec01960a}</Project>
       <Name>SecurityServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserRepositoryInterfaces\UserRepositoryInterfaces.csproj">
+      <Project>{3610F30B-B8D3-4562-803B-EB222CD8A068}</Project>
+      <Name>UserRepositoryInterfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

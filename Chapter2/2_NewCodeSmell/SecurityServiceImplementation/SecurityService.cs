@@ -1,8 +1,9 @@
-﻿using _2_NewCodeSmell.Interfaces;
+﻿using Entities;
 using SecurityServiceInterfaces.Interfaces;
 using System;
+using UserRepositoryInterfaces.Interfaces;
 
-namespace SecurityServiceImplementation.Models {
+namespace SecurityServiceImplementation {
     public class SecurityService : ISecurityService {
         private IUserRepository userRepository;
 
@@ -13,7 +14,7 @@ namespace SecurityServiceImplementation.Models {
         }
 
         public void ChangePassword(int userId, string newPassword) {
-            //User user = userRepository.GetById(userId);
+            User user = userRepository.GetById(userId);
         }
     }
 }

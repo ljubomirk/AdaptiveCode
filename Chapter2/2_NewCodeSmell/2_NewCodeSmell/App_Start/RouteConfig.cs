@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace _2_NewCodeSmell
+namespace UserRepositoryInterfaces
 {
     public class RouteConfig
     {

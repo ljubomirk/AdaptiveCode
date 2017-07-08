@@ -1,4 +1,4 @@
-﻿using _2_NewCodeSmell.Infrastructure;
+﻿using DependencyInjector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace _2_NewCodeSmell
+namespace UserRepositoryInterfaces
 {
     public class MvcApplication : System.Web.HttpApplication
     {
