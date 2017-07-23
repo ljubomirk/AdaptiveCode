@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace UserRepositoryImplementation {
-    class EFDbContext {
+    class EFDbContext : DbContext {
         public DbSet<Product> Products { get; set; }
     }
 }
